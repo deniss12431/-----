@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: white;
+}
+
+.proff {
+  background-color: black;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+}
+.proff__text {
+  color: white;
+}
+.task {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+}
+.task__p-main {
+  font-weight: 400;
+}
+
+.rules__p-main {
+  font-weight: 400;
+}
+.cbl__p-main {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

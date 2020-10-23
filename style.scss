@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-pills .nav-link.active {
+    color: black;
+    background-color: white;
+}
+
+//Первый блок элементов
+
+.proff {
+    background-color: black;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+
+    &__text {
+        color: white;
+    }
+
+    &__a {}
+}
+
+//Второй блок элементов
+
+.task {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+
+    &__p {}
+
+    &__p-main {
+        font-weight: 400;
+    }
+}
+
+//Третий блок элементов
+
+.rules {
+    &__p-main {
+        font-weight: 400;
+    }
+
+    &__p {}
+}
+
+.cbl {
+    &__p-main {
+    font-weight: 400;
+    }
+    &__p  {
+    
+    }
+}
