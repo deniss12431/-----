@@ -2,11 +2,83 @@
     box-sizing: border-box;
 }
 
+// Мой набор Миксинов 
+
+@mixin cont {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+@mixin font_main {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.2;
+    margin: 0px 0 70px;
+}
+// Конец миксинов 
+
+// Общие стили на всё 
+body {
+    @include font();
+    background-color: #F6F7F9;
+}
+
+p {
+    line-height: 1.5;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    background-color: transparent;
+}
+// Конец общих стилей
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    @include cont();
+}
+
 .nav-pills .nav-link.active {
     color: black;
     background-color: white;
 }
 
+.nav-link {
+    color: black;
+}
+
+.nav-item {
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.2;
+}
+.dropdown-toggle {
+    color: black;
+    background-color: white;
+}
+
+.container {
+    @include cont();
+}
+
+// ______________________________________________________________________________
 //Первый блок элементов
 
 .proff {
