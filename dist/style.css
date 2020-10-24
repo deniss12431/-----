@@ -68,6 +68,14 @@ section .container {
   max-width: 1300px;
 }
 
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1300px;
+  max-width: 1300px;
+}
+
 .section-title {
   font-size: 50px;
   font-weight: 700;
