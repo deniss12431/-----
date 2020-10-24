@@ -92,6 +92,10 @@ section {
     }
 }
 
+.container {
+    @include cont();
+}
+
 .section-title {
     @include font_main;
 }
