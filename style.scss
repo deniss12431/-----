@@ -1,3 +1,5 @@
+@import "partials/params";
+
 * {
     box-sizing: border-box;
 }
@@ -5,17 +7,19 @@
 // Мой набор Миксинов 
 
 @mixin cont {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 1300px;
+    max-width: 1300px;
 }
 
-@mixin font {
+@mixin font($fontColor: #000, $fontSize: 16px, $fontWeight: 400) {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: $fontSize;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: $fontWeight;
+    color: $fontColor;
 }
 
 @mixin font_main {
@@ -25,6 +29,7 @@
     line-height: 1.2;
     margin: 0px 0 70px;
 }
+
 // Конец миксинов 
 
 // Общие стили на всё 
@@ -45,6 +50,7 @@ p {
 a {
     background-color: transparent;
 }
+
 // Конец общих стилей
 
 .header {
@@ -66,64 +72,268 @@ a {
 }
 
 .nav-item {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.2;
 }
+
 .dropdown-toggle {
     color: black;
     background-color: white;
 }
 
-.container {
-    @include cont();
+.section {
+    padding: 70px 0;
+}
+
+section {
+
+    .container {
+        @include cont();
+    }
+}
+
+.section-title {
+    @include font_main;
 }
 
 // ______________________________________________________________________________
 //Первый блок элементов
 
-.proff {
-    background-color: black;
-    width: 400px;
-    height: 200px;
-    border-radius: 20px;
-
-    &__text {
-        color: white;
-    }
-
-    &__a {}
-}
 
 //Второй блок элементов
 
-.task {
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
+.programms__title {
+    @include font($fontSize: 20px, $fontWeight: 600);
+}
 
-    &__p {}
+.proff-main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: start;
+    width: 100%;
 
-    &__p-main {
-        font-weight: 400;
+    .proff {
+        display: block;
+        background-color: $beigeColor;
+        width: 400px;
+        // height: 200px;
+        border-radius: 20px;
+        text-decoration: none;
+        padding: 30px 20px;
+        margin: 0;
+        margin-right: 25px;
+        box-sizing: border-box;
+        position: relative;
+
+        p {
+            margin: 0;
+            color: black;
+            position: relative;
+            z-index: 10;
+        }
+
+        .proff__title {
+            @include font($fontSize: 24px, $fontWeight: 500);
+            margin-top: 5px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .title__date {
+            margin-top: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .title__readmore {
+            @include font_main;
+            margin: 0;
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    .beige-block {
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: #000;
+            transition: .3s all ease-out;
+            z-index: 1;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        &:hover:after,
+        &:hover {
+            color: #fff;
+            height: 100%;
+            border: 0;
+            box-shadow: $boxShadow;
+
+            p {
+                color: #fff;
+            }
+    
+            .proff__title {
+                color: #fff;
+            }
+        }
+    }
+
+    .black-block {
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $beigeColor;
+            transition: .3s all ease-out;
+            z-index: 1;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        &:hover:after,
+        &:hover {
+            color: #000;
+            height: 100%;
+            border: 0;
+            box-shadow: $boxShadow;
+
+            p {
+                color: #000;
+            }
+    
+            .proff__title {
+                color: #fff;
+            }
+        }
+
+        background-color: black;
+
+        p {
+            color: #fff;
+        }
+
+        .proff__title {
+            color: #fff;
+        }
     }
 }
+
+.tasks__container {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .task {
+        border: 1px solid black;
+        border-radius: 20px;
+        width: calc((100% - 20px) / 2);
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        transition: .3s all;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: 0;
+            left: 0;
+            transition: .3s all ease-out;
+            background: #D7F1EF;
+            z-index: 1;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+        }
+
+        &:hover:after,
+        &:hover {
+            height: 100%;
+            border: 0;
+            box-shadow: $boxShadow;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            margin-right: 20px;
+        }
+
+        &__p {
+            z-index: 10;
+            position: relative;
+        }
+
+        &__p-main {
+            position: relative;
+            @include font($fontSize: 24px, $fontWeight: 600);
+            margin-bottom: 30px;
+            z-index: 10;
+        }
+
+        &__pic {
+            z-index: 10;
+            position: relative;
+        }
+    }
+}
+
 
 //Третий блок элементов
 
-.rules {
-    &__p-main {
-        font-weight: 400;
-    }
-
-    &__p {}
+.section-title.section-title__rules {
+    margin-bottom: 30px;
 }
 
-.cbl {
-    &__p-main {
-    font-weight: 400;
-    }
-    &__p  {
-    
+.section-title__rules--text {
+    width: 45%;
+    margin-bottom: 100px;
+}
+
+.rules {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .rule {
+        width: calc((100% - 20px) / 2);
+        border: 1px solid #959597;
+        box-shadow: $boxShadow;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding: 30px 30px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        justify-content: space-between;
+
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5) {
+            margin-right: 20px;
+        }
+
+        .rule__text {
+            padding: 0 10px;
+            box-sizing: border-box;
+
+            .text-title {
+                @include font($fontSize: 24px, $fontWeight: 500);
+            }
+        }
+
     }
 }
