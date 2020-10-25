@@ -36,6 +36,7 @@
 body {
     @include font();
     background-color: #F6F7F9;
+    color: #333;
 }
 
 p {
@@ -51,6 +52,19 @@ a {
     background-color: transparent;
 }
 
+section {
+
+    .container {
+        @include cont();
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
 // Конец общих стилей
 
 .header {
@@ -60,6 +74,8 @@ a {
     align-items: center;
     width: 1300px;
     @include cont();
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .nav-pills .nav-link.active {
@@ -78,18 +94,12 @@ a {
 
 .dropdown-toggle {
     color: black;
-    background-color: white;
+    background-color: transparent;
 }
 
 .section {
-    padding: 70px 0;
-}
-
-section {
-
-    .container {
-        @include cont();
-    }
+    padding-bottom: 70px;
+    // padding: 70px 0;
 }
 
 .container {
@@ -100,6 +110,45 @@ section {
     @include font_main;
 }
 
+.first {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__h {
+        width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 5%;
+    }
+
+    &__h1 {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Rubik', sans-serif;
+        line-height: 1.2;
+        margin: 0px 0 70px;
+        padding: 0;
+    }
+
+    &__p {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.title-city {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
 // ______________________________________________________________________________
 //Первый блок элементов
 
@@ -292,12 +341,16 @@ section {
         }
 
         &__pic {
+            height: 70px;
             z-index: 10;
             position: relative;
         }
     }
 }
 
+.video {
+  margin-bottom: 70px;
+}
 
 //Третий блок элементов
 
@@ -307,7 +360,7 @@ section {
 
 .section-title__rules--text {
     width: 45%;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .rules {
@@ -327,6 +380,7 @@ section {
         overflow: hidden;
         box-sizing: border-box;
         justify-content: space-between;
+        background-color: white;
 
         &:nth-child(1),
         &:nth-child(3),
@@ -344,4 +398,39 @@ section {
         }
 
     }
+}
+
+.cbl__main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+//test from ucode
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-md-5 {
+    width: 41.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-md-7 {
+    width: 58.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.title-section {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 80px;
 }

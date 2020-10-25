@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   color: #000;
   background-color: #F6F7F9;
+  color: #333;
 }
 
 p {
@@ -24,6 +25,21 @@ a {
   background-color: transparent;
 }
 
+section .container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1300px;
+  max-width: 1300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +51,8 @@ a {
   padding-right: 15px;
   width: 1300px;
   max-width: 1300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-pills .nav-link.active {
@@ -53,19 +71,11 @@ a {
 
 .dropdown-toggle {
   color: black;
-  background-color: white;
+  background-color: transparent;
 }
 
 .section {
-  padding: 70px 0;
-}
-
-section .container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1300px;
-  max-width: 1300px;
+  padding-bottom: 70px;
 }
 
 .container {
@@ -82,6 +92,43 @@ section .container {
   font-family: "Rubik", sans-serif;
   line-height: 1.2;
   margin: 0px 0 70px;
+}
+
+.first {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.first__h {
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5%;
+}
+.first__h1 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.2;
+  margin: 0px 0 70px;
+  padding: 0;
+}
+.first__p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.title-city {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
 }
 
 .programms__title {
@@ -256,8 +303,13 @@ section .container {
   z-index: 10;
 }
 .tasks__container .task__pic {
+  height: 70px;
   z-index: 10;
   position: relative;
+}
+
+.video {
+  margin-bottom: 70px;
 }
 
 .section-title.section-title__rules {
@@ -266,7 +318,7 @@ section .container {
 
 .section-title__rules--text {
   width: 45%;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .rules {
@@ -286,6 +338,7 @@ section .container {
   overflow: hidden;
   box-sizing: border-box;
   justify-content: space-between;
+  background-color: white;
 }
 .rules .rule:nth-child(1), .rules .rule:nth-child(3), .rules .rule:nth-child(5) {
   margin-right: 20px;
@@ -300,6 +353,41 @@ section .container {
   line-height: 1.2;
   font-weight: 500;
   color: #000;
+}
+
+.cbl__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-md-5 {
+  width: 41.66666667%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-md-7 {
+  width: 58.33333333%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title-section {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
