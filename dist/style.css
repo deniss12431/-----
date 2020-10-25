@@ -156,7 +156,6 @@ section .container {
 }
 .proff-main .beige-block:hover {
   color: #fff;
-  height: 100%;
   border: 0;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
 }
