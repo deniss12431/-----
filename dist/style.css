@@ -154,16 +154,20 @@ section .container {
   box-sizing: border-box;
   border-radius: 20px;
 }
-.proff-main .beige-block:hover:after, .proff-main .beige-block:hover {
+.proff-main .beige-block:hover {
   color: #fff;
   height: 100%;
   border: 0;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
 }
-.proff-main .beige-block:hover:after p, .proff-main .beige-block:hover p {
+.proff-main .beige-block:hover:after {
+  height: 100%;
   color: #fff;
 }
-.proff-main .beige-block:hover:after .proff__title, .proff-main .beige-block:hover .proff__title {
+.proff-main .beige-block:hover p {
+  color: #fff;
+}
+.proff-main .beige-block:hover .proff__title {
   color: #fff;
 }
 .proff-main .black-block {
@@ -182,17 +186,19 @@ section .container {
   box-sizing: border-box;
   border-radius: 20px;
 }
-.proff-main .black-block:hover:after, .proff-main .black-block:hover {
+.proff-main .black-block:hover {
   color: #000;
-  height: 100%;
   border: 0;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
 }
-.proff-main .black-block:hover:after p, .proff-main .black-block:hover p {
+.proff-main .black-block:hover::after {
+  height: 100%;
+}
+.proff-main .black-block:hover p {
   color: #000;
 }
-.proff-main .black-block:hover:after .proff__title, .proff-main .black-block:hover .proff__title {
-  color: #fff;
+.proff-main .black-block:hover .proff__title {
+  color: #000;
 }
 .proff-main .black-block p {
   color: #fff;

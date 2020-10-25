@@ -172,13 +172,16 @@ section {
             border-radius: 20px;
         }
 
-        &:hover:after,
         &:hover {
             color: #fff;
             height: 100%;
             border: 0;
             box-shadow: $boxShadow;
 
+            &:after {
+                height: 100%;
+                color: #fff;
+            }
             p {
                 color: #fff;
             }
@@ -204,19 +207,21 @@ section {
             border-radius: 20px;
         }
 
-        &:hover:after,
         &:hover {
             color: #000;
-            height: 100%;
             border: 0;
             box-shadow: $boxShadow;
+
+            &::after {
+                height: 100%;
+            }
 
             p {
                 color: #000;
             }
     
             .proff__title {
-                color: #fff;
+                color: #000;
             }
         }
 
