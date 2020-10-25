@@ -49,6 +49,7 @@ p {
 }
 
 a {
+    text-decoration: none;
     background-color: transparent;
 }
 
@@ -65,6 +66,19 @@ img {
     vertical-align: middle;
     border: 0;
 }
+
+video {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    display: block;
+}
+
 // Конец общих стилей
 
 .header {
@@ -149,6 +163,7 @@ img {
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
 }
+
 // ______________________________________________________________________________
 //Первый блок элементов
 
@@ -230,10 +245,11 @@ img {
                 height: 100%;
                 color: #fff;
             }
+
             p {
                 color: #fff;
             }
-    
+
             .proff__title {
                 color: #fff;
             }
@@ -267,7 +283,7 @@ img {
             p {
                 color: #000;
             }
-    
+
             .proff__title {
                 color: #000;
             }
@@ -349,7 +365,7 @@ img {
 }
 
 .video {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 //Третий блок элементов
@@ -400,37 +416,31 @@ img {
     }
 }
 
-.cbl__main {
+.cbl{
     display: flex;
     flex-wrap: wrap;
+
+    &__video{
+
+    }
+
+    &__text {
+
+    }
 }
 
+.footer {
+    background-color: black;
 
-//test from ucode
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-.col-md-5 {
-    width: 41.66666667%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    &__img {
+        z-index: 15;
+    }
 
-.col-md-7 {
-    width: 58.33333333%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.title-section {
-    font-size: 50px;
-    font-weight: 700;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 80px;
+    &__phone {
+    color: white;
+    text-decoration: none;
+    }
+    &__phone:hover ::after {
+        text-decoration: none;
+    }
 }
