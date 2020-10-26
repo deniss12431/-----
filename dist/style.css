@@ -412,11 +412,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .footer__img {
-  align-items: center;
   padding-left: 45px;
 }
 
