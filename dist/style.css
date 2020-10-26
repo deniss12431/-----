@@ -26,6 +26,10 @@ a {
   background-color: transparent;
 }
 
+a:hover {
+  color: black;
+}
+
 section .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -73,8 +77,22 @@ footer {
   background-color: white;
 }
 
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+}
+
 .nav-link {
   color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: black;
+  background-color: transparent;
 }
 
 .nav-item {
@@ -374,9 +392,6 @@ footer {
 }
 .footer {
   background-color: black;
-}
-.footer__img {
-  z-index: 1555;
 }
 .footer__phone {
   color: white;
