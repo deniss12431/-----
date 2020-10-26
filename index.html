@@ -1,282 +1,387 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Web Academy</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/bootstrap-4.5.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Final Project Web Academy</title>
-  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./libs/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./dist/style.css" />
-</head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <a href="./index.html"><img src="./assets/images/logo.svg" alt="" /></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Доступні програми</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Професія програміст</a>
+            <a class="dropdown-item" href="#">Fron-end розробник</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a id="method" class="nav-link" href="#">Методологія</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="./faq.html">FAQ</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-outline-dark">
+        Отримати консультацію
+      </button>
+    </header>
+    <!-- Конец шапки сайта -->
 
-<body>
-  <!-- Шапка сайта -->
-  <header class="header">
-    <a href="./index.html"><img src="./assets/images/logo.svg" alt=""></a> 
-    <ul class="nav nav-pills">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Доступні програми</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Професія програміст</a>
-          <a class="dropdown-item" href="#">Fron-end розробник</a>
+    <!-- Начало первого блока -->
+    <div class="container">
+      <div class="first">
+        <div class="first__h">
+          <h1 class="first__h1">
+            В ucode IT академії починають кар’єру програміста
+          </h1>
+          <p class="first__p">
+            Вчимо писати код; тренуємо думати, як IT-інженер; консультуємо, як
+            влаштуватися на роботу в ТОП 30 IT компаній
+          </p>
+          <br />
+          <p class="first__p">
+            Навчання проходить у кампусі ucode, в центрі інновацій UNIT.City.
+          </p>
+          <p class="title-city">
+            <img src="./assets/images/locate.svg" alt="" /> Київ
+          </p>
         </div>
-      </li>
-      <li class="nav-item">
-        <a id="method" class="nav-link" href="#">Методологія</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Блог</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" href="./faq.html">FAQ</a>
-      </li>
-    </ul>
-    <button type="button" class="btn btn-outline-dark">
-      Отримати консультацію
-    </button>
-  </header>
-  <!-- Конец шапки сайта -->
-
-  <!-- Начало первого блока -->
-  <div class="container">
-    <div class="first">
-      <div class="first__h">
-        <h1 class="first__h1">В ucode IT академії починають кар’єру програміста</h1>
-        <p class="first__p">
-          Вчимо писати код; тренуємо думати, як IT-інженер; консультуємо, як
-          влаштуватися на роботу в ТОП 30 IT компаній
-        </p>
-        <br>
-        <p class="first__p">
-          Навчання проходить у кампусі ucode, в центрі інновацій UNIT.City.
-        </p>
-        <p class="title-city">
-          <img src="./assets/images/locate.svg" alt="" /> Київ
-        </p>
+        <div class="col-md-6 hidden-xs">
+          <video autoplay="" loop="" muted="" playsinline="">
+            <source
+              src="./assets/vid/lesson.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+          </video>
+        </div>
       </div>
-      <div class="col-md-6 hidden-xs">
-        <video autoplay="" loop="" muted="" playsinline="">
-          <source src="./assets/vid/lesson.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-        </video>
+      <!-- Конец первого блока -->
+
+      <section class="section">
+        <div class="container">
+          <div class="programms">
+            <p class="programms__title">Найближчі програми:</p>
+            <div class="proff-main">
+              <!-- Тут будут два блока -->
+              <a href="#" class="proff beige-block">
+                <p>основна</p>
+                <h3 class="proff__title">
+                  "Професія програміст" <br />за 16 місяців
+                </h3>
+                <p class="title__date">19 жовтня</p>
+                <p class="title__readmore">Почати</p>
+              </a>
+
+              <a href="#" class="proff black-block">
+                <p>додаткова</p>
+                <h3 class="proff__title">
+                  Front-end розробник <br />за 4.5 місяці
+                </h3>
+                <p class="title__date">9 листопада</p>
+                <p class="title__readmore">Почати</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <!-- Тут будут дивы с блоками -->
+        <div class="tasks container">
+          <h2 class="section-title">Що ми робимо в академії:</h2>
+
+          <div class="tasks__container">
+            <div class="task">
+              <img
+                class="task__pic"
+                src="./assets/images/1_Vchimosya-programuvati.png"
+                alt=""
+              />
+              <p class="task__p-main">Вчимося програмувати</p>
+              <p class="task__p">
+                Вивчимо мови C, C++, Java, JavaScript, PHP, Python. На них Марк
+                Цукерберг написав Facebook, компанія Sony розробила програмне
+                забезпечення для Playstation, а Blizzard зробила гру World of
+                WarCraft. Виконані завдання студента перевіряють його колеги,
+                які знаходяться на такому ж рівні навчання або вище. Перевіряють
+                за допомогою відеозв'язку або особисто в кампусі. Хто і коли
+                буде перевіряти — автоматично вирішує LMS-система.
+              </p>
+            </div>
+
+            <div class="task">
+              <img
+                class="task__pic"
+                src="./assets/images/2_Vchimosya-dumati-yak-IT-inzheneri-pratsyuyemo-v-komandah-bez-vikladachiv.png"
+                alt=""
+              />
+              <p class="task__p-main">
+                Вчимося думати, як IT-інженери; працюємо в командах без
+                викладачів
+              </p>
+              <p class="task__p">
+                В кампусі немає викладачів. Усі студенти навчаються, пишуть код
+                і перевіряють виконані завдання один в одного. Разом ми краще
+                вирішуємо складні завдання. Якщо щось не виходить, студенти
+                звертаються за допомогою до кураторів.
+              </p>
+            </div>
+
+            <div class="task">
+              <img
+                class="task__pic"
+                src="./assets/images/3_Sluhayemo-lektsii-ekspertiv-pratsyuyemo-na-vorkshopah.png"
+                alt=""
+              />
+              <p class="task__p-main">
+                Слухаємо лекції експертів, працюємо на воркшопах
+              </p>
+              <p class="task__p">
+                В академію приходять партнери та читають лекції. Наприклад,
+                засновник Ajax Systems з лекцією про те, що вчити та як
+                заробляти молодому програмісту; антихакер з кіберполіції
+                говорить про захист персональних даних; чи нейробіолог пояснює,
+                як навчити мозок думати краще. Лекції допомагають розвиватися
+                швидше та вирішувати складні навчальні завдання.
+              </p>
+            </div>
+
+            <div class="task">
+              <img
+                class="task__pic"
+                src="./assets/images/4_Grayemo-ta-vidpochivayemo.png"
+                alt=""
+              />
+              <p class="task__p-main">Граємо та відпочиваємо</p>
+              <p class="task__p">
+                Під час перерви ми ходимо обідати до їдальні; проводимо час у
+                парку UNIT.City; граємо на приставці, у настільний теніс чи
+                футбол; проводимо турніри з настільних ігор. Студент прокачує
+                свого віртуального персонажа, отримує досвід за виконані
+                завдання, збільшує свій рівень знань та навичок програмування. В
+                умовах марафону студенти перевіряють межі своїх інтелектуальних
+                здібностей і розганяють мізки до нових обертів: вчаться мислити
+                критично та робити роботу швидко.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Тест, делаю большие блоки -->
+      <!-- Конец теста -->
+
+      <h2 class="section-title">Кампус академії знаходиться в Unit.City.</h2>
+      <center>
+        <iframe
+          class="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2RhYGRGD7fg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write;
+ encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </center>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title section-title__rules">
+            Навчаємо, як в Apple
+          </h2>
+          <p class="section-title__rules--text">
+            Ми працюємо за методологією Challenge Based Learning (CBL). За нею
+            навчаються команди розробників iPhone, Mac OS, AppStore та інші.
+          </p>
+
+          <div class="rules">
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_1.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Навчайтесь самі та навчайте інших</p>
+                <p class="text__p">
+                  Засвоїти код легше, якщо студенту пояснює колега по навчанню.
+                  Це допомагає студенту навчитися вести діалог. Коли пояснюєш
+                  іншим, запам’ятовуєш сам.
+                </p>
+              </div>
+            </div>
+
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_2.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Помилки — це добре</p>
+                <p class="text__p">
+                  Це допомагає студенту не втрачати цікавість до навчання і не
+                  боятися самостійно приймати рішення. Таким чином студент
+                  здобуває досвід програміста.
+                </p>
+              </div>
+            </div>
+
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_3.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Увага завжди на одній задачі</p>
+                <p class="text__p">
+                  Це допомагає навчитися тримати увагу на одній проблемі та
+                  зрозуміти, як самостійно побудувати процес для її вирішення.
+                </p>
+              </div>
+            </div>
+
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_4.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Автоматичний щоденник</p>
+                <p class="task__p">
+                  Всі дії студента під час навчання документуються. Це допомагає
+                  проаналізувати результат: що виходить добре, а що треба
+                  підтягнути.
+                </p>
+              </div>
+            </div>
+
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_5.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Від простого до складного</p>
+                <p class="text__p">
+                  Студент не загубиться в програмі. Навчання проходить легко і
+                  навичка писати код зростає. Чим далі буде проходити студент,
+                  тим складнішими та більш захоплюючими будуть завдання.
+                </p>
+              </div>
+            </div>
+
+            <div class="rule">
+              <img
+                class="rule__pic"
+                src="./assets/images/apple_icon_6.svg"
+                alt=""
+              />
+              <div class="rule__text">
+                <p class="text-title">Тільки за допомогою технологій</p>
+                <p class="text__p">
+                  Студент навчиться презентувати свої результати колегам,
+                  збирати дані для навчання, формувати команду, користуватися
+                  сучасними інструментами
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="first">
+        <div class="col-md-6 hidden-xs">
+          <video autoplay="" loop="" muted="" playsinline="">
+            <source
+              src="./assets/vid/cbl.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+          </video>
+        </div>
+
+        <div class="first__h">
+          <h1 class="first__h1">Які скіли CBL розвиває у наших студентів?</h1>
+          <p class="first__p">
+            Програмісти компаній ITernal та Ajax Systems вважають, що CBL працює
+            ефективніше, ніж звичайні лекції, семінари та тренажери з
+            програмування.
+          </p>
+        </div>
       </div>
     </div>
-    <!-- Конец первого блока -->
 
-    <section class="section">
-      <div class="container">
-        <div class="programms">
-          <p class="programms__title">Найближчі програми:</p>
-          <div class="proff-main">
-            <!-- Тут будут два блока -->
-            <a href="#" class="proff beige-block">
-              <p>основна</p>
-              <h3 class="proff__title">"Професія програміст" <br>за 16 місяців</h3>
-              <p class="title__date">19 жовтня</p>
-              <p class="title__readmore">Почати</p>
-            </a>
+    <footer class="footer">
 
-            <a href="#" class="proff black-block">
-              <p>додаткова</p>
-              <h3 class="proff__title">Front-end розробник <br>за 4.5 місяці</h3>
-              <p class="title__date">9 листопада</p>
-              <p class="title__readmore">Почати</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section">
-      <!-- Тут будут дивы с блоками -->
-      <div class="tasks container">
-        <h2 class="section-title">Що ми робимо в академії:</h2>
-
-        <div class="tasks__container">
-          <div class="task">
-            <img class="task__pic" src="./assets/images/1_Vchimosya-programuvati.png" alt="">
-            <p class="task__p-main">Вчимося програмувати</p>
-            <p class="task__p">Вивчимо мови C, C++, Java, JavaScript, PHP, Python.
-              На них Марк Цукерберг написав Facebook,
-              компанія Sony розробила програмне забезпечення для Playstation,
-              а Blizzard зробила гру World of WarCraft. Виконані завдання студента перевіряють його колеги, які
-              знаходяться на такому ж рівні навчання або вище. Перевіряють за допомогою відеозв'язку або особисто в
-              кампусі. Хто і коли буде перевіряти — автоматично вирішує LMS-система.</p>
-          </div>
-
-          <div class="task">
-            <img class="task__pic"
-              src="./assets/images/2_Vchimosya-dumati-yak-IT-inzheneri-pratsyuyemo-v-komandah-bez-vikladachiv.png"
-              alt="">
-            <p class="task__p-main">Вчимося думати, як IT-інженери; працюємо в командах без викладачів</p>
-            <p class="task__p">В кампусі немає викладачів. Усі студенти навчаються, пишуть код і перевіряють виконані
-              завдання один в одного. Разом ми краще вирішуємо складні завдання. Якщо щось не виходить, студенти
-              звертаються за допомогою до кураторів.</p>
-          </div>
-
-          <div class="task">
-            <img class="task__pic" src="./assets/images/3_Sluhayemo-lektsii-ekspertiv-pratsyuyemo-na-vorkshopah.png"
-              alt="">
-            <p class="task__p-main">Слухаємо лекції експертів, працюємо на воркшопах</p>
-            <p class="task__p">В академію приходять партнери та читають лекції. Наприклад, засновник Ajax Systems з
-              лекцією про те, що вчити та як заробляти молодому програмісту; антихакер з кіберполіції говорить про
-              захист персональних даних; чи нейробіолог пояснює, як навчити мозок думати краще. Лекції допомагають
-              розвиватися швидше та вирішувати складні навчальні завдання.</p>
-          </div>
-
-          <div class="task">
-            <img class="task__pic" src="./assets/images/4_Grayemo-ta-vidpochivayemo.png" alt="">
-            <p class="task__p-main">Граємо та відпочиваємо</p>
-            <p class="task__p">Під час перерви ми ходимо обідати до їдальні; проводимо час у парку UNIT.City; граємо на
-              приставці, у настільний теніс чи футбол; проводимо турніри з настільних ігор. Студент прокачує свого
-              віртуального персонажа, отримує досвід за виконані завдання, збільшує свій рівень знань та навичок
-              програмування. В умовах марафону студенти перевіряють межі своїх інтелектуальних здібностей і розганяють
-              мізки до нових обертів: вчаться мислити критично та робити роботу швидко. </p>
-          </div>
-
+      <img class="footer_img" src="./assets/images/logo-white.svg" alt="" />
+        <div>
+          <a class="footer__phone" href="tel:380441111111">+38(044) 111 11 11</a> <br> <br>
+          <a class="footer__phone" href="tel:380501111111">+38(050) 111 11 11</a>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Тест, делаю большие блоки -->
-    <!-- Конец теста -->
-
-    <h2 class="section-title">Кампус академії знаходиться в Unit.City.</h2>
-    <center>
-      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/2RhYGRGD7fg" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write;
- encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </center>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title section-title__rules">Навчаємо, як в Apple</h2>
-        <p class="section-title__rules--text">Ми працюємо за методологією Challenge Based Learning (CBL).
-          За нею навчаються команди розробників iPhone, Mac OS, AppStore та інші.
-        </p>
-
-        <div class="rules">
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_1.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Навчайтесь самі та навчайте інших</p>
-              <p class="text__p">Засвоїти код легше, якщо студенту пояснює колега по навчанню. Це допомагає студенту
-                навчитися вести діалог. Коли пояснюєш іншим, запам’ятовуєш сам.</p>
-            </div>
-          </div>
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_2.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Помилки — це добре</p>
-              <p class="text__p">Це допомагає студенту не втрачати цікавість до навчання і не боятися самостійно
-                приймати рішення. Таким чином студент здобуває досвід програміста.</p>
-            </div>
-          </div>
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_3.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Увага завжди на одній задачі</p>
-              <p class="text__p">Це допомагає навчитися тримати увагу на одній проблемі та зрозуміти, як самостійно
-                побудувати процес для її вирішення.</p>
-            </div>
-          </div>
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_4.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Автоматичний щоденник</p>
-              <p class="task__p">Всі дії студента під час навчання документуються. Це допомагає проаналізувати
-                результат: що виходить добре, а що треба підтягнути.</p>
-            </div>
-          </div>
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_5.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Від простого до складного</p>
-              <p class="text__p">Студент не загубиться в програмі. Навчання проходить легко і навичка писати код
-                зростає. Чим далі буде проходити студент, тим складнішими та більш захоплюючими будуть завдання.</p>
-            </div>
-          </div>
-
-          <div class="rule">
-            <img class="rule__pic" src="./assets/images/apple_icon_6.svg" alt="">
-            <div class="rule__text">
-              <p class="text-title">Тільки за допомогою технологій</p>
-              <p class="text__p">Студент навчиться презентувати свої результати колегам, збирати дані для навчання,
-                формувати команду, користуватися сучасними інструментами</p>
-            </div>
-          </div>
-
+        <div >
+          <p>hello@test.com.ua</p>
+        <p><img src="./assets/images/marker-white.svg" alt="" /> вул. Дорогожицька 3, Київ, Україна</p>
         </div>
 
-      </div>
-    </section>
+        <div >
+          <ul class="footer__ul">
+            <li><img src="./assets/images/facebook.svg" alt="" /></li>
+            <li><img class="footer__img" src="./assets/images/instagram.svg" alt="" /></li>
+            <li><img class="footer__img" src="./assets/images/youtube.svg" alt="" /></li>
+            <li><img class="footer__img" src="./assets/images/telegram.svg" alt="" /></li>
+          </ul>
+        </div>
 
-    <div class="cbl">
-      <div class="cbl__video">
-        <video autoplay="" loop="" muted="" playsinline="">
-          <source src="./assets/vid/cbl.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-        </video>
-      </div>
-      <div class="cbl__text">
-        <p class="text-title">Які скіли CBL розвиває у наших студентів?</p>
-        <p class="text__p">Програмісти компаній ITernal та Ajax Systems вважають,
-          що CBL працює ефективніше, ніж звичайні лекції,
-          семінари та тренажери з програмування.</p>
-      </div>
-    </div>
-  </div>
+    </footer>
 
-
-  <footer class="footer">
-
-    <img class="footer_img" src="./assets/images/logo-white.svg" alt="">
-    <div>
-      <div>
-        <a class="footer__phone" href="tel:380441111111">+38(044) 111 11 11</a>
-        <a class="footer__phone" href="tel:380501111111">+38(050) 111 11 11</a>
-      </div>
-      <div>
-        <p>hello@test.com.ua</p>
-        <p>
-          <img src="./assets/images/locate.svg" alt="">
-          вул. Дорогожицька 3,
-          Київ, Україна
-        </p>
-      </div>
-      <div>
-        <ul>
-          <li><img src="./assets/images/facebook.svg" alt=""></li>
-          <li><img src="./assets/images/instagram.svg" alt=""></li>
-          <li><img src="./assets/images/youtube.svg" alt=""></li>
-          <li><img src="./assets/images/telegram.svg" alt=""></li>
-        </ul>
-      </div>
-    </div>
-
-  </footer>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
-  <script src="./main.ts"></script>
-</body>
-
+    <script>
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    </script>
+    <script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    </script>
+    <script src="./main.ts"></script>
+  </body>
 </html>

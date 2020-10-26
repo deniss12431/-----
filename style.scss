@@ -30,6 +30,11 @@
     margin: 0px 0 70px;
 }
 
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 // Конец миксинов 
 
 // Общие стили на всё 
@@ -115,7 +120,8 @@ footer {
     color: black;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: black;
     background-color: transparent;
 }
@@ -435,33 +441,44 @@ footer {
     }
 }
 
-.cbl{
-    display: flex;
-    flex-wrap: wrap;
-
-    &__video{
-
-    }
-
-    &__text {
-
-    }
-}
 
 .footer {
+    margin-top: 50px;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    &__img {
-    }
+    &__img {}
 
     &__phone {
-    color: white;
-    text-decoration: none;
-    }
-    &__phone:hover ::after {
+        color: white;
         text-decoration: none;
     }
+
+    &__phone:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    &__contact {
+        @include flex();
+    }
+
+    &__ul {
+        @include flex();
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__img {
+        align-items: center;
+        padding-left: 45px;
+    }
 }
+
+
 
 // FAQ HTML 
 
@@ -471,9 +488,10 @@ footer {
     text-decoration: none;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,0,0,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .25);
 }
 
 .btn-link:hover {
