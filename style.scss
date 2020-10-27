@@ -450,7 +450,6 @@ footer {
     justify-content: space-around;
     align-items: center;
 
-    &__img {}
 
     &__phone {
         color: white;
@@ -477,6 +476,41 @@ footer {
     }
 }
 
+.footer1 {
+    margin-top: 201px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    &__phone1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    &__phone1:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    &__contact1 {
+        @include flex();
+    }
+
+    &__ul1 {
+        @include flex();
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__img {
+        padding-left: 45px;
+    }
+}
+
+
 
 
 // FAQ HTML 
@@ -496,4 +530,54 @@ footer {
 .btn-link:hover {
     color: black;
     text-decoration: underline;
+}
+
+// Адаптация под разные экраны
+
+// @media screen and (max-width:700px) {
+//     body {
+//         width: 700px;
+//     }
+// }
+
+// @media (min-width: 1950px) {
+//     .container {
+//         width: 1920px;
+//     }
+// }
+
+// @media (min-width: 1350px) {
+// .container {
+//     width: 1300px;
+// }
+// }
+
+// @media (min-width: 1200px) {
+// .container {
+//     width: 1170px;
+// }
+// }
+
+// @media (min-width: 992px) {
+// .container {
+//     width: 970px;
+// }
+// }
+
+// @media (min-width: 768px){
+// .container {
+//     width: 750px;
+// }
+// }
+
+// @media screen and (max-width: 991px) {
+// .header {
+//     width: 900px;
+// }
+// }
+
+@media screen and (max-width: 1400px) {
+.container {
+    max-width: 1200px;
+}
 }

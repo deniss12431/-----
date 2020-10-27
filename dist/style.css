@@ -417,6 +417,36 @@ footer {
   padding-left: 45px;
 }
 
+.footer1 {
+  margin-top: 201px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer1__phone1 {
+  color: white;
+  text-decoration: none;
+}
+.footer1__phone1:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer1__contact1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer1__ul1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer1__img {
+  padding-left: 45px;
+}
+
 .btn-link {
   font-weight: 600;
   color: black;
@@ -432,6 +462,12 @@ footer {
 .btn-link:hover {
   color: black;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
